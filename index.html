@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-theme="light">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -14,6 +14,7 @@
         extend: {
           colors: {
             clifford: '#da373d',
+            primary:"#1C1C1C"
           }
         }
       }
@@ -24,15 +25,52 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<!-- font awesome kit integrate -->
+<script src="https://kit.fontawesome.com/6f4c5cea35.js" crossorigin="anonymous"></script>
+<!-- internal css -->
 <style>
     .font-manrope{
         font-family: 'Manrope', sans-serif;
     }
+    .des-1{
+        @apply text-[#777] font-medium leading-8 text-lg
+    }
+    .des-2{
+        @apply text-[#777] font-medium leading-7 text-base
+    }
+    .des-3{
+        @apply text-[#777] font-semibold  text-base
+    }
+    .des-4{
+        @apply text-[#777] font-normal  text-base leading-7 
+    }
+    .btn{
+        @apply w-48 h-16  rounded-[10px] 
+    }
 </style>
 </head>
-<body class="">
+<body class="font-manrope">
     <!-- header -->
-    <header></header>
+    <header class="flex flex-col lg:flex-row container mx-auto lg:justify-around mt-16">
+        <div>
+            <h1 class="text-[#1C1C1C] text-7xl font-extrabold leading-[100px]">It's good <br>
+                tea time at The <br> Tea House</h1>
+            <p class="des-1">Tea and Botanical Solutions Supplier Give Optimum <br> Satisfaction To Your Taste Buds.</p>
+            <div class="btn bg-[#fb923c]"><button class="text-white text-center font-bold " >Explore More</button></div>
+        </div>
+        <div>
+            <div class="h-[262px] w-[520px]"><img src="images/banner.png" alt=""></div>
+            <div class="flex gap-2 drop-shadow-lg w-max p-5 mt-12 ml-14   bg-white">
+               <div class="w-12 h-11"> <i class="fa-solid fa-star text-3xl text-amber-400"></i></div>
+               <div>
+                <p class="primary text-3xl font-extrabold">5.00</p>
+                <p class="des-3">Trust Pilot rating</p>
+               </div>
+
+            </div>
+        </div>
+        
+    </header>
     <!-- main -->
     <main></main>
     <!-- footer -->
